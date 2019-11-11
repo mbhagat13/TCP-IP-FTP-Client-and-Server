@@ -14,10 +14,10 @@ DEFS =
 CFLAGS = ${DEFS} ${INCLUDE}
 
 tcp_client:
-	${CC} -o echo_client echo_client.c -lnsl  
+	${CC} -o tcp_client tcp_client.c -lnsl  
 
 tcp_server:
-	${CC} -o echo_server echo_server.c  -lnsl
+	${CC} -o tcp_server tcp_server.c  -lnsl
 
 
 clean: FRC
